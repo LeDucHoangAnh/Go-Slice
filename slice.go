@@ -67,4 +67,12 @@ func main() {
 	slice13 = append(slice13, 100)
 	fmt.Println(slice13)
 
+	//copy([],[])
+	src := []string{"a", "b", "c", "d"}
+	dest := make([]string, 2)
+
+	number := copy(dest, src)
+
+	fmt.Println(dest)
+	fmt.Println(number)
 }
