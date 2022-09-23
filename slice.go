@@ -50,4 +50,16 @@ func main() {
 	// len: số lượng phần tử có trong slice
 	//	capacity: số lượng phần tử underlying array bắt đầu từ vị trí start khi mà slice được tạo
 
+	//	make, copy, append
+	//make: Khai báo 1 slice cung cấp cụ thể length và cap
+	slice11 := make([]int, 2, 5)
+	fmt.Println(slice11)
+	fmt.Println(len(slice11))
+	fmt.Println(cap(slice11))
+
+	slice12 := make([]int, 2)
+	fmt.Println(slice11)
+	fmt.Println(len(slice12))
+	fmt.Println(cap(slice12))
+
 }
