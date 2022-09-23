@@ -38,4 +38,16 @@ func main() {
 	slice9[0] = 9
 	fmt.Println(slice9)
 	fmt.Println(array1)
+
+	//length va capacity cua slice
+	countries := [...]string{"VN", "Canada", "JP", "CN", "ABC"}
+	slice10 := countries[2:3]
+	fmt.Println(slice10)
+
+	fmt.Println(len(slice10)) //[JP]
+	fmt.Println(cap(slice10)) // "JP", "CN", "ABC"
+
+	// len: số lượng phần tử có trong slice
+	//	capacity: số lượng phần tử underlying array bắt đầu từ vị trí start khi mà slice được tạo
+
 }
