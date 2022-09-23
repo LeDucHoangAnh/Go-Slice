@@ -27,4 +27,15 @@ func main() {
 	var slice6 = []int{1, 2, 3, 4, 5, 6, 7, 8, 9}
 	slice7 := slice6
 	fmt.Println(slice7)
+
+	slice8 := slice6[1:] //1->8
+	fmt.Println(slice8)
+
+	// slice => reference type
+	var array1 = [5]int{1, 2, 3, 4, 5}
+	slice9 := array1[:]
+
+	slice9[0] = 9
+	fmt.Println(slice9)
+	fmt.Println(array1)
 }
