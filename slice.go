@@ -62,4 +62,9 @@ func main() {
 	fmt.Println(len(slice12))
 	fmt.Println(cap(slice12))
 
+	//append: thêm 1 giá trị vào slice
+	var slice13 []int
+	slice13 = append(slice13, 100)
+	fmt.Println(slice13)
+
 }
