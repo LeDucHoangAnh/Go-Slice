@@ -75,4 +75,8 @@ func main() {
 
 	fmt.Println(dest)
 	fmt.Println(number)
+
+	//delele item index = 1
+	src = append(src[:1], src[2:]...) // slice - slice = append(slice1, slice2...)
+	fmt.Println(src)
 }
