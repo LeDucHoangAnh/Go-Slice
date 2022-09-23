@@ -22,4 +22,9 @@ func main() {
 
 	slice5 := array[:3] // 0,1,2
 	fmt.Println(slice5)
+
+	//tao 1 slice tu mot slice khac
+	var slice6 = []int{1, 2, 3, 4, 5, 6, 7, 8, 9}
+	slice7 := slice6
+	fmt.Println(slice7)
 }
